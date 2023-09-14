@@ -18,6 +18,8 @@ manifest:
   remotes:
     # nRF Connect SDK GitHub organization.
     # NCS repositories are hosted here.
+    - name: alwa
+      url-base: https://github.com/alwa-nordic
     - name: ncs
       url-base: https://github.com/nrfconnect
     # Third-party repository sources:
@@ -58,8 +60,9 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/introduction/index.html
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
+      remote: alwa
       repo-path: sdk-zephyr
-      revision: 02956222c991e2c036810a5e39fd60e72aa75866
+      revision: 7dfdd8cc2236c1f1da56d3db5be19729612d6709
       import:
         # In addition to the zephyr repository itself, NCS also
         # imports the contents of zephyr/west.yml at the above
